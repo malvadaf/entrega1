@@ -1,0 +1,413 @@
+* {
+    font-family: sans-serif;
+}
+
+h1 {
+    font-size: 3em;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2em;
+    text-align: center;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.withoutDecoration{
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    margin: 3% 3% 0 3%;
+    padding: 20px 0;
+    background-color: #fff;
+    border-radius: 20px;
+    opacity: 0.9;
+}
+
+.logo {
+    margin: auto;
+    display: block;
+    width: 50px;
+}
+
+.logo:hover {
+    transform: scale(1.5);
+    background-color: #000;
+    border-radius: 100%;
+}
+
+body {
+    background-image: url('images/background.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+@media (max-width: 600px) {
+    body {
+        background-image: none;
+        background-color: #f12b2d;
+    }
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #000;
+    border-radius: 5px;
+    display: block;
+    font-size: 1.1em;
+    text-align: center;
+    padding: 10px 15px;
+    margin: 0 10px;
+}
+
+nav li a:hover {
+    background-color: #000;
+    color: #fff;
+    transform: scale(1.2);
+}
+
+
+@media (max-width: 600px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav ul {
+        padding-inline-start: 0;
+    }
+
+    nav li {
+        float: none;
+        margin: 0;
+    }
+}
+
+main {
+    margin: 2% 3% 0 3%;
+    padding: 1% 1%;
+    background-color: #fff;
+    border-radius: 20px;
+    opacity: 0.9;
+}
+
+footer {
+    margin: 2% 3% 0 3%;
+    padding: 3% 3%;
+    background-color: #fff;
+    border-radius: 20px;
+    opacity: 0.9;
+    font-size: 1em;
+    text-align: center;
+}
+
+/* Index */
+.moviesContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.movie {
+    border-radius: 15px;
+    box-shadow: 2px 2px 8px 4px #d3d3d3d1;
+    display: flex;
+    flex-direction: column;
+    margin: 3%;
+    width: 25%;
+}
+
+.movie:hover {
+    transform: scale(0.95);
+}
+
+.movie .info {
+    background-color: #f12b2d;
+    border-radius: 0 0 20px 20px;
+    padding: 12px;
+    position: relative;
+    text-align: center;
+}
+
+.movie .info a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.info .left {
+    float: left;
+    margin-left: 1em;
+}
+
+.info .right {
+    float: right;
+    margin-right: 1em;
+}
+
+@media (max-width: 600px) {
+    .moviesContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .movie {
+        width: 75%;
+    }
+}
+
+/* Movie */
+.summaryContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.summaryContainer>img {
+    margin: 2%;
+    width: 25%;
+}
+
+.summaryContainer>img:hover {
+    transform: scale(1.1);
+}
+
+.summaryContainer>.summary {
+    margin: 3%;
+    width: 65%;
+}
+
+@media (max-width: 600px) {
+    .summaryContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .summaryContainer>img {
+        width: 50%;
+    }
+
+    .summaryContainer>.summary {
+        width: 90%;
+    }
+}
+
+.buyTicket {
+    background-color: #000;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 2em;
+    font-weight: bold;
+    padding: 16px 24px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: 30vh;
+    text-decoration: none;
+}
+
+.buyTicket:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0 10px 15px;
+}
+
+.leftButton {
+    margin: 0;
+}
+
+/* Shop */
+.shopContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.shopImage {
+    margin: 2%;
+    width: 25%;
+    min-width: 300px;
+}
+
+.shopContainer>.shopForm {
+    margin: 3%;
+    width: 65%;
+}
+
+.shopSeparation{
+    background-color: #f12b2d;
+    width: 5px;
+    border-radius: 100px; 
+}
+@media (max-width: 600px) {
+    .shopContainer {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .shopImage {
+        width: 70%;
+    }
+
+    .shopContainer>.shopForm {
+        width: 90%;
+    }
+
+    .shopSeparation{
+        display: none;
+    }
+}
+
+input[type=text],
+[type=number],
+[type=email],
+[type=tel],
+select,
+textarea {
+    padding: 12px 20px;
+    margin: 8px 0;
+    border-radius: 20px;
+}
+input[type=submit]{
+    margin-top: 1em;
+}
+input[type=radio]{
+    accent-color: #f12b2d;
+}
+.radioZone{
+    vertical-align: middle;
+}
+#people{
+    min-width: 170px;
+    width: 20%;
+    float:left;
+    margin-right: 1%;
+}
+#movie{
+    min-width: 300px;
+    width: 30%;
+}
+
+#names, #email{
+    width: 90%;
+}
+
+@media (max-width: 600px) {
+    #people{
+        min-width: 170px;
+        width: 90%;
+    }
+    #movie{
+        min-width: 300px;
+        width: 100%;
+    }
+    
+    #names, #email{
+        width: 90%;
+    }
+}
+
+/* Contact */
+textarea{
+    width: 100%;
+}
+#contactName, #contactEmail, #contactPhone{
+    width: 100%;
+}
+.sendButton{
+    background-color: #000;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 8px 16px;
+    text-align: center;
+    width: 15vh;
+    text-decoration: none;
+}
+.contactTitle{
+    float:left;
+}
+.contactSubtitle{
+    font-weight: bold;
+    color: #f12b2d;
+}
+.contactContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.contactData {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2% 2% 2% 15%;
+}
+
+.contactContainer>.contactForm {
+    margin: 3%;
+    width: 45%;
+}
+
+.contactLine{
+    display: flex;
+    align-items: center;
+}
+
+.icon{
+    width: 3em;
+    height: 3em;
+    background-color: #f12b2d;
+    padding: 2%;
+    border-radius: 100%;
+    margin: 5%;
+}
+.text{
+    font-size: 1.5em;
+}
+
+@media (max-width: 600px) {
+    .contactContainer {
+        display: flex;
+        flex-direction: column;
+    }
+    .contactContainer>.contactForm {
+        width: 80%;
+    }
+
+    .contactData {
+        width: 100%;
+        align-items: flex-start;
+        margin: 0;
+    }
+}

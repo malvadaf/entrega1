@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8">
+    <title>Te damos la bienvenida al cine IRON</title>
+</head>
+
+<body>
+    <header>
+        <h1>Cartelera del cine IRON</h1>
+        <img class="logo" src="images/logo.png" alt="Logo del cine">
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="shop.html">Compra de entradas</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="shopContainer">
+            <div class="shopForm">
+                <form action="#" method="post">
+                    <h3>Complete los siguientes campos para proceder con la compra de sus entradas</h3>
+                    <input type="number" placeholder="Número de asistentes" min="1" id="people">
+                    <select id="movie">
+                        <option value="0" disabled selected>Película elegida</option>
+                        <option value="spiderman">Spiderman</option>
+                        <option value="wonderwoman">Wonder Woman</option>
+                        <option value="doctorstrange">Doctor Strange</option>
+                    </select>
+                    <input type="email" placeholder="Email de entrega" id="email">
+                    <input type="text" placeholder="Nombres de los asistentes" id="names">
+                    <h4>¿En qué zona prefieres las entradas?</h4>
+                    <div class="radioZone">
+                        <input type="radio" id="low" value="Zona baja" name="zone">
+                        <label for="low">Zona baja</label>
+                    </div>
+                    <div class="radioZone">
+                        <input type="radio" id="intermediate" value="Zona intermedia" name="zone">
+                        <label for="intermediate">Zona intermedia</label>
+                    </div>
+
+                    <div class="radioZone">
+                        <input type="radio" id="hight" value="Zona superior" name="zone">
+                        <label for="hight">Zona superior</label>
+                    </div>
+                    <input class="buyTicket leftButton" type="submit" value="Comprar">
+                </form>
+            </div>
+            <hr class="shopSeparation">
+            <img class="shopImage" src="images/cinema.png" alt="Butacas de cine" />
+        </div>
+    </main>
+    <footer>
+        Proyecto realizado por Marta Alvarado para IRONHack
+    </footer>
+</body>
+
+</html>

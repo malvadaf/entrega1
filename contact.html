@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8">
+    <title>Te damos la bienvenida al cine IRON</title>
+</head>
+
+<body>
+    <header>
+        <h1>Cartelera del cine IRON</h1>
+        <img class="logo" src="images/logo.png" alt="Logo del cine">
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="shop.html">Compra de entradas</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="contactContainer">
+            <div class="contactForm">
+                <form action="#" method="post">
+                    <h3 class="contactTitle">¿Alguna duda o sugerencia? <span class="contactSubtitle">Hablemos!</span>
+                    </h3>
+                    <input type="text" placeholder="Nombre" id="contactName">
+                    <input type="email" placeholder="Email" id="contactEmail">
+                    <input type="tel" placeholder="Teléfono" id="contactPhone">
+                    <textarea placeholder="¿Qué nos querías comentar?" rows="5" id="contactComment"></textarea>
+                    <input class="sendButton leftButton" type="submit" value="Enviar">
+                </form>
+            </div>
+            <div class="contactData">
+                <ul>
+                    <li class="contactLine">
+                        <img class="icon" src="images/phone.png" />
+                        <span class="bold"><a class="withoutDecoration" href="tel:666666666">666 66 66 66</a></span>
+                    </li>
+                    <li class="contactLine">
+                        <img class="icon" src="images/email.png" />
+                        <span class="bold"><a class="withoutDecoration"
+                                href="mailto:hola@cineiron.es">hola@cineiron.es</a></span>
+                    </li>
+                    <li class="contactLine">
+                        <img class="icon" src="images/clock.png" />
+                        <span class="bold">L-V 16:00h - 2:00h</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer>
+        Proyecto realizado por Marta Alvarado para IRONHack
+    </footer>
+</body>
+
+</html>
